@@ -4,22 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swine Reaper</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/swine-reaper.css" />
-    <script src="../js/swine-reaper.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/swine-reaper.css" />
+    <script src="./js/main.js" defer></script>
+    <script src="./js/swine-reaper.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <div class="logo">Swine Reaper</div>
+      <div class="logo">MikeN Designs</div>
       <nav class="nav-menu">
-        <a href="../index.html">Home</a>
-        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <button
+          id="theme-toggle"
+          class="theme-btn"
+          aria-label="Toggle theme"
+          title="Toggle light/dark mode"
+        >
           🌙
         </button>
       </nav>
     </header>
 
     <main class="game-content">
+      <section class="intro">
+        <h1>Swine Reaper</h1>
+        <p>A Minesweeper-style game. Choose a difficulty and start playing!</p>
+      </section>
+
       <section class="game-controls">
         <label for="difficulty">Difficulty:</label>
         <select id="difficulty">
@@ -30,7 +44,6 @@
         <button id="start-btn">Start Game</button>
       </section>
 
-      <!-- Board wrapper for centering -->
       <div class="board-wrapper">
         <section id="game-board" class="game-board"></section>
         <div id="game-status"></div>
