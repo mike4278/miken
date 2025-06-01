@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swine Reaper</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/swine-reaper.css" />
+    <script src="../js/swine-reaper.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">Swine Reaper</div>
+      <nav class="nav-menu">
+        <a href="../index.html">Home</a>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+          🌙
+        </button>
+      </nav>
+    </header>
+
+    <main class="game-content">
+      <section class="game-controls">
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+          <option value="easy">Easy (9x9, 10 mines)</option>
+          <option value="medium">Medium (16x16, 40 mines)</option>
+          <option value="hard">Hard (30x16, 99 mines)</option>
+        </select>
+        <button id="start-btn">Start Game</button>
+      </section>
+
+      <!-- Board wrapper for centering -->
+      <div class="board-wrapper">
+        <section id="game-board" class="game-board"></section>
+        <div id="game-status"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 MikeN Designs. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
