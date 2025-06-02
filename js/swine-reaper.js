@@ -168,7 +168,7 @@ function toggleFlag(r, c) {
 
   if (square.flagged) {
     square.element.classList.add("flagged");
-    square.element.textContent = "🚩";
+    square.element.textContent = "🐖";
   } else {
     square.element.classList.remove("flagged");
     square.element.textContent = "";
@@ -228,7 +228,7 @@ function endGame(won) {
       const square = board[r][c];
       if (square.isMine && !square.flagged) {
         square.element.classList.add("bomb");
-        square.element.textContent = "💣";
+        square.element.textContent = "💀";
       }
       square.element.style.cursor = "default";
     }
@@ -239,7 +239,7 @@ function endGame(won) {
     gameStatus.textContent = "🎉 You won! Congratulations! 🎉";
     gameStatus.style.color = "green";
   } else {
-    gameStatus.textContent = "💥 Game Over! You hit a mine.";
+    gameStatus.textContent = "💥 Game Over! You encountered the Reaper.";
     gameStatus.style.color = "red";
   }
 }
